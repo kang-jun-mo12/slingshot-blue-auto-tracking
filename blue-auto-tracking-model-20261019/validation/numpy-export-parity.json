@@ -1,0 +1,7 @@
+{
+  "export": "numpy_matern_1_5",
+  "samples": 122,
+  "max_distance_export_difference_m": 8.44213587924969e-13,
+  "max_pitch_export_difference_deg": 1.4795276115364686e-11,
+  "model_sha256": "e8b9de406cd4f47904c520eecd61a37e245c87fd52ca8f6af134a7d50d73654a"
+}

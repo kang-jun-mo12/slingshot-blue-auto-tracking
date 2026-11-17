@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3° 간격 자동 촬영</title>
+  <link rel="stylesheet" href="/scan.css?v=2">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">CAMERA / SERVO GRID</p>
+        <h1>3° 간격 자동 촬영</h1>
+      </div>
+      <a href="/">서보 조종 화면 ↗</a>
+    </header>
+    <p class="intro">입력한 좌우 범위를 3°씩 왕복하고, 줄마다 상하 D11을 기존처럼 90°~110°로 올립니다. 각 위치에서 1920×1080 PNG를 한 장씩 촬영합니다. 범위 끝이 3° 간격에 맞지 않으면 끝 각도에서도 한 장 촬영합니다. 발사 서보 D9는 움직이지 않습니다.</p>
+
+    <section class="layout">
+      <div class="preview">
+        <div class="frame">
+          <span id="placeholder">촬영을 시작하면 최근 사진이 표시됩니다</span>
+          <img id="latest-photo" alt="최근 촬영한 사진" hidden>
+        </div>
+        <p>최근 촬영 사진 · 원본은 PNG로 저장됩니다</p>
+      </div>
+      <div class="panel">
+        <p id="phase" class="phase">대기</p>
+        <div class="range-inputs">
+          <label>좌우 시작 각도
+            <input id="yaw-min" type="number" min="0" max="179" step="1" value="30" inputmode="numeric">
+          </label>
+          <label>좌우 끝 각도
+            <input id="yaw-max" type="number" min="1" max="180" step="1" value="150" inputmode="numeric">
+          </label>
+        </div>
+        <progress id="progress" max="328" value="0"></progress>
+        <p id="count">0 / 328장</p>
+        <p id="angles">현재 각도: -</p>
+        <p id="message" role="status" aria-live="polite">좌우 촬영 범위를 입력하세요. 먼저 서보 조종 화면에서 각도를 적용해야 하며, 현재 상하 각도는 90°~110° 범위여야 합니다.</p>
+        <div class="actions">
+          <button id="start" type="button">자동 촬영 시작</button>
+          <button id="stop" type="button" disabled>중지</button>
+        </div>
+        <a id="download" hidden>촬영 결과 ZIP 다운로드</a>
+        <p class="hint">첫 각도 적용 때 Arduino 재시작으로 D9을 포함한 모든 서보가 잠깐 90°가 될 수 있습니다. 장치를 안전하게 비우고 D9 설정을 확인하세요.</p>
+        <p class="hint">사진과 각도 기록은 라즈베리파이에 먼저 보관됩니다. 완료하거나 중지하면 ZIP을 눌러 노트북의 크롬 다운로드 폴더에 저장하세요. 촬영 중에는 이 탭을 열어 두세요. 탭을 닫거나 연결이 끊기면 자동 중지합니다.</p>
+      </div>
+    </section>
+  </main>
+  <script src="/scan.js?v=2"></script>
+</body>
+</html>

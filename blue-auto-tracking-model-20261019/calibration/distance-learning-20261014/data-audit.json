@@ -1,0 +1,42 @@
+{
+  "manual_rows": 11,
+  "history_sessions": 252,
+  "history_events": {
+    "observation": 1073,
+    "plan": 887,
+    "finished": 250,
+    "distance_observation": 213,
+    "distance_estimate": 100,
+    "distance_offset": 100,
+    "flag_start": 12,
+    "flag_complete": 12,
+    "return_path": 103,
+    "return_verification": 12,
+    "return_move": 34,
+    "distance_offset_axis": 190,
+    "offset_complete": 88,
+    "distance_rejected": 3
+  },
+  "accepted_rows": 111,
+  "accepted_sources": {
+    "manual_measurement": 11,
+    "teacher_output_user_confirmed": 100
+  },
+  "unique_boxes": 111,
+  "user_confirmation_scope": "Existing calculated results were compared and matched, per user on 2026-10-14",
+  "excluded": [
+    {
+      "path": "tracking_sessions/20261009-231805-cdf30f8f/events.jsonl",
+      "line": 11,
+      "reason": "invalid_json"
+    },
+    {
+      "path": "tracking_sessions/20261012-152717-2f8f30b8/events.jsonl",
+      "line": 7,
+      "reason": "invalid_json"
+    }
+  ],
+  "dataset_sha256": "3f5ff11784911f71f7eea65edb0bc7694453b030a0c97be0596d379b6841f129",
+  "original_measurements_sha256": "3431fea0b0067eb1a6fc5ef81da859c4d475d405e1aeef4a663e855dced3ab3d",
+  "label_note": "Teacher labels are user-confirmed outputs of the existing estimator; they are not additional independent tape-measure observations."
+}

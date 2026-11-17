@@ -1,0 +1,3 @@
+# Install a CUDA-enabled torch/torchvision build first on NVIDIA desktops.
+ultralytics==8.4.165
+Pillow>=11,<13

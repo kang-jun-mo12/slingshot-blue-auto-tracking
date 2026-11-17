@@ -1,0 +1,167 @@
+{
+  "status": "offline_candidate_not_deployed",
+  "model_type": "two_gaussian_process_regressors",
+  "kernel_nu": 1.5,
+  "sklearn_version": "1.9.1",
+  "data": {
+    "manual_rows": 11,
+    "history_sessions": 252,
+    "history_events": {
+      "observation": 1073,
+      "plan": 887,
+      "finished": 250,
+      "distance_observation": 213,
+      "distance_estimate": 100,
+      "distance_offset": 100,
+      "flag_start": 12,
+      "flag_complete": 12,
+      "return_path": 103,
+      "return_verification": 12,
+      "return_move": 34,
+      "distance_offset_axis": 190,
+      "offset_complete": 88,
+      "distance_rejected": 3
+    },
+    "accepted_rows": 111,
+    "accepted_sources": {
+      "manual_measurement": 11,
+      "teacher_output_user_confirmed": 100
+    },
+    "unique_boxes": 111,
+    "user_confirmation_scope": "Existing calculated results were compared and matched, per user on 2026-10-14",
+    "excluded": [
+      {
+        "path": "tracking_sessions/20261009-231805-cdf30f8f/events.jsonl",
+        "line": 11,
+        "reason": "invalid_json"
+      },
+      {
+        "path": "tracking_sessions/20261012-152717-2f8f30b8/events.jsonl",
+        "line": 7,
+        "reason": "invalid_json"
+      }
+    ],
+    "dataset_sha256": "3f5ff11784911f71f7eea65edb0bc7694453b030a0c97be0596d379b6841f129",
+    "original_measurements_sha256": "3431fea0b0067eb1a6fc5ef81da859c4d475d405e1aeef4a663e855dced3ab3d",
+    "label_note": "Teacher labels are user-confirmed outputs of the existing estimator; they are not additional independent tape-measure observations."
+  },
+  "hyperparameter_selection": [
+    {
+      "nu": 1.5,
+      "validation_folds": [
+        {
+          "rows": 31,
+          "distance_mae_m": 0.003515827632484194,
+          "distance_max_error_m": 0.02842603742667449,
+          "pitch_mae_deg": 0.06233797541701511,
+          "pitch_max_error_deg": 0.3967586127580045
+        },
+        {
+          "rows": 30,
+          "distance_mae_m": 0.0010978150571460195,
+          "distance_max_error_m": 0.005756295562200364,
+          "pitch_mae_deg": 0.03544124829548488,
+          "pitch_max_error_deg": 0.2013815143167772
+        },
+        {
+          "rows": 30,
+          "distance_mae_m": 0.0008188654639296633,
+          "distance_max_error_m": 0.013336567750208417,
+          "pitch_mae_deg": 0.029979088951747102,
+          "pitch_max_error_deg": 0.13148124117501503
+        }
+      ],
+      "selection_score": 0.6069446473328194
+    },
+    {
+      "nu": 2.5,
+      "validation_folds": [
+        {
+          "rows": 31,
+          "distance_mae_m": 0.003345730438392011,
+          "distance_max_error_m": 0.029077756342756444,
+          "pitch_mae_deg": 0.060784833885648364,
+          "pitch_max_error_deg": 0.33432226217018624
+        },
+        {
+          "rows": 30,
+          "distance_mae_m": 0.002491078351567233,
+          "distance_max_error_m": 0.02234148427555871,
+          "pitch_mae_deg": 0.039642022571554136,
+          "pitch_max_error_deg": 0.24073088319504876
+        },
+        {
+          "rows": 30,
+          "distance_mae_m": 0.000979856367322718,
+          "distance_max_error_m": 0.015304231503329602,
+          "pitch_mae_deg": 0.032782567671097954,
+          "pitch_max_error_deg": 0.36874757494540944
+        }
+      ],
+      "selection_score": 0.6712535856704003
+    }
+  ],
+  "evaluation_model_trained_rows": 91,
+  "held_out_session_ids": [
+    "20261012-150342-87586872",
+    "20261012-151253-a4c91006",
+    "20261012-151420-b3975592",
+    "20261012-152159-1d149c82",
+    "20261012-152408-d9bee247",
+    "20261012-152546-07138fc4",
+    "20261012-153235-73c65d2d",
+    "20261012-153508-c25526dc",
+    "20261012-153642-862b4fe2",
+    "20261012-154122-1123e74f",
+    "20261012-154230-b6e7b2a9",
+    "20261012-155641-1011ac35",
+    "20261012-155800-df372962",
+    "20261012-155948-52e0566a",
+    "20261012-160235-9fed33b7",
+    "20261012-160354-1732e729",
+    "20261012-160511-1b71af36",
+    "20261012-160628-137c3fd2",
+    "20261012-160809-43009ed9",
+    "20261012-160931-a21861d8"
+  ],
+  "held_out_history": {
+    "rows": 20,
+    "distance_mae_m": 0.0007531042579805858,
+    "distance_max_error_m": 0.007621855445421932,
+    "pitch_mae_deg": 0.0192394037683294,
+    "pitch_max_error_deg": 0.08973451394129484
+  },
+  "baseline_table_on_held_out": {
+    "rows": 20,
+    "distance_mae_m": 4.499999999999504e-05,
+    "distance_max_error_m": 9.999999999998899e-05,
+    "pitch_mae_deg": 0.0,
+    "pitch_max_error_deg": 0.0
+  },
+  "final_model_trained_rows": 111,
+  "training_fit": {
+    "rows": 111,
+    "distance_mae_m": 8.818779227343338e-06,
+    "distance_max_error_m": 0.00013147636064969603,
+    "pitch_mae_deg": 0.008364590823147831,
+    "pitch_max_error_deg": 0.06040141382711184
+  },
+  "learned_targets": [
+    "distance_m",
+    "raw_pitch_offset_deg"
+  ],
+  "yaw_is_configuration": true,
+  "current_yaw_offset_deg": -2.0,
+  "current_pitch_trim_deg": -1.0,
+  "learned_kernels": {
+    "distance": "1.35**2 * Matern(length_scale=0.32, nu=1.5) + WhiteKernel(noise_level=1.85e-07)",
+    "pitch": "3.08**2 * Matern(length_scale=0.758, nu=1.5) + WhiteKernel(noise_level=0.00024)"
+  },
+  "fit_warnings": [],
+  "caveats": [
+    "Held-out teacher-label error measures reproduction of the current estimator, not independent physical accuracy.",
+    "All manual rows came from one supplied table; repeated sessions are not new independent range measurements.",
+    "Posterior standard deviations are model estimates, not validated physical error bounds.",
+    "Do not extrapolate outside 1.50-2.00 m; live integration and real-world validation remain pending."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "markdownCopies":  3,
+    "xmlParts":  9,
+    "checkedContentBlocks":  168,
+    "embeddedFigures":  5,
+    "moduleNames":  [
+                        "CAM",
+                        "DPCM"
+                    ],
+    "colonSubheadings":  true,
+    "gpIntroduction":  true,
+    "removedContentStillAbsent":  true
+}

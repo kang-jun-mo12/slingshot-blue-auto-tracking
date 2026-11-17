@@ -1,0 +1,15 @@
+{
+    "markdownCopies":  3,
+    "reasons":  [
+                    "첫째",
+                    "둘째",
+                    "셋째",
+                    "넷째"
+                ],
+    "removedParagraphsAbsent":  true,
+    "deletedOperationalDetailsAbsent":  true,
+    "checkedContentBlocks":  160,
+    "xmlParts":  9,
+    "embeddedImagesVerified":  5,
+    "firingDescription":  "DPCM target-angle output; no unverified firing GP added"
+}

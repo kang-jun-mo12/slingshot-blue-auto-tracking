@@ -1,0 +1,15 @@
+{
+  "original_non_whitespace": 11016,
+  "revised_non_whitespace": 8257,
+  "reduction_percent": 25.0,
+  "markdown_copies_match": true,
+  "required_sections": 5,
+  "figures": 5,
+  "tables": 2,
+  "word_content_items_checked": 133,
+  "word_xml_parts_valid": 7,
+  "word_bytes": 2479933,
+  "module_input_output_training_sections": 3,
+  "yolo_training_counts_match_metadata": true,
+  "dpcm_training_data_source": "User correction: all 111 records are direct measurements; historical source metadata unchanged."
+}

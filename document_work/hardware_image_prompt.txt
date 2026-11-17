@@ -1,0 +1,14 @@
+Tool: built-in image_gen (imagegen skill)
+Reference: C:/Users/kangj/Downloads/KakaoTalk_20261024_224308909.jpg
+Output: architecture_images/00_hardware_configuration.png
+Purpose: Report illustration reconstructed from the supplied photograph and the user's camera-mounting description.
+
+Use case: precise-object-edit.
+Asset type: white-background hardware configuration illustration for a Korean engineering report.
+Input image: the attached local JPG is the actual hardware and is the edit target, not a stylistic reference.
+Primary request: preserve the actual tabletop wooden servo mechanism in the photo, isolate it on a pure white background, and restore its missing Raspberry Pi camera immediately UNDER the long forward-projecting wooden arm.
+Keep: the tan laser-cut MDF frame with dark cut edges, long slim flat arm projecting toward the LEFT FRONT of the photograph, blue micro servos, white servo horns, visible screws, wires, metal standoffs, and rectangular wooden base. Keep its recognizable shape and proportions. Use the same three-quarter viewpoint, with the arm pointing leftward and toward the viewer.
+Add: a realistically small green Raspberry Pi camera PCB with one black lens, mounted on a compact bracket directly beneath the forward arm near its body end. Its PCB plane is perpendicular to the arm's longitudinal direction. CRITICAL: the lens faces forward ALONG the projecting arm, toward its left-front tip, NOT sideways toward the photographer. The camera is fixed to the MOVING arm assembly so it shares yaw and pitch motion. A slim camera ribbon cable routes back to the body. The camera's optical direction and the arm direction must visibly match, although the camera is lower than the arm.
+Backdrop: seamless pure white, no table, no room, no other objects; soft minimal contact shadow only.
+Style: precise, clean, realistic product illustration suitable for a paper, sharp hardware detail, generous white margin, landscape composition. Show the full device, including the entire forward arm and base.
+Constraints: no labels, no text, no arrows, no logos, no watermark, no added computer board, no extra sensors or mechanical structures. Preserve the actual simple educational apparatus; do not redesign it. The camera placement is a reconstruction from the user's description, not a claim of a photographed original installation.

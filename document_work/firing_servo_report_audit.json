@@ -1,0 +1,14 @@
+{
+    "markdownCopies":  3,
+    "finalExecutionSteps":  6,
+    "finalStepAppliesCorrectionAndFires":  true,
+    "firingServoAngles":  [
+                              "0°",
+                              "180°"
+                          ],
+    "dpcmIncludesFiringControl":  true,
+    "removedParagraphsAbsent":  true,
+    "checkedContentBlocks":  167,
+    "xmlParts":  9,
+    "verifiedEmbeddedImages":  5
+}

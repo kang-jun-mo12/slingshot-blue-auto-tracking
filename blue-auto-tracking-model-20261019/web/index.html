@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>자동 추적 · 거리 보정</title>
+  <link rel="stylesheet" href="/style.css?v=integer-step1">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">CAMERA / SERVO</p>
+        <h1>자동 추적 · 거리 보정</h1>
+        <a class="tracker-link" href="/scan.html">3° 간격 자동 촬영 화면 열기 ↗</a>
+      </div>
+      <div id="connection" class="connection"><span></span><strong>확인 중</strong></div>
+    </header>
+
+    <section id="tracking" class="vision" aria-labelledby="vision-title">
+      <div class="vision-heading">
+        <h2 id="vision-title">중심 맞춤 → 학습 모델 거리 추정 → 최종 보정</h2>
+        <div class="tracking-actions">
+          <button id="capture" class="secondary">한 장 촬영 · 검출</button>
+          <button id="tracking-toggle" class="primary"><kbd>Space</kbd> <span>자동 실행 시작</span></button>
+        </div>
+      </div>
+      <div class="vision-layout">
+        <div class="camera-controls">
+        <div class="camera-frame">
+          <span id="camera-placeholder">자동 실행 시작을 누르면 추적부터 최종 좌우·상하 보정까지 진행합니다</span>
+          <img id="camera-photo" alt="카메라 사진과 검출된 표적" width="1920" height="1080" hidden>
+          <div id="target-box" hidden><span id="target-label"></span></div>
+          <span class="camera-center" aria-hidden="true"></span>
+        </div>
+    <div class="keyboard-settings">
+      <label><input id="keyboard-enabled" type="checkbox" checked> 키보드 조작</label>
+      <span id="keyboard-state" role="status">서보 연결 대기</span>
+      <label>이동량 <input id="keyboard-step" type="number" min="0.1" max="5" step="0.1" value="1"> °</label>
+      <label><input id="reverse-yaw" type="checkbox"> 좌우 반전</label>
+      <label><input id="reverse-pitch" type="checkbox"> 상하 반전</label>
+    </div>
+
+    <section class="controls" aria-label="서보 각도 설정">
+      <article class="servo" data-servo="0">
+        <div class="servo-heading"><span>01</span><h2>좌우</h2><small>D7</small></div>
+        <output>90°</output>
+        <input type="range" min="0" max="180" step="0.1" value="90" aria-label="좌우 각도">
+        <div class="number-row"><button class="step" data-step="-0.1" aria-label="0.1도 줄이기">−</button><input class="angle" type="number" min="0" max="180" step="0.1" value="90" inputmode="decimal"><button class="step" data-step="0.1" aria-label="0.1도 늘리기">+</button></div>
+        <div class="coarse-row" role="group" aria-label="1도 단위 조절">
+          <button class="step coarse-step" type="button" data-step="-1" aria-label="1도 줄이기">−1°</button>
+          <button class="step coarse-step" type="button" data-step="1" aria-label="1도 늘리기">+1°</button>
+        </div>
+      </article>
+      <article class="servo" data-servo="1">
+        <div class="servo-heading"><span>02</span><h2>깃발</h2><small>D9</small></div>
+        <output>90°</output>
+        <input type="range" min="0" max="180" step="0.1" value="90" aria-label="깃발 서보 각도">
+        <div class="number-row"><button class="step" data-step="-0.1" aria-label="0.1도 줄이기">−</button><input class="angle" type="number" min="0" max="180" step="0.1" value="90" inputmode="decimal"><button class="step" data-step="0.1" aria-label="0.1도 늘리기">+</button></div>
+        <div class="coarse-row" role="group" aria-label="1도 단위 조절">
+          <button class="step coarse-step" type="button" data-step="-1" aria-label="1도 줄이기">−1°</button>
+          <button class="step coarse-step" type="button" data-step="1" aria-label="1도 늘리기">+1°</button>
+        </div>
+        <div class="flag-actions">
+          <button id="flag-go" class="primary" type="button" disabled>Go</button>
+          <button id="flag-go-return" class="secondary" type="button" disabled>Go &amp; Return</button>
+        </div>
+        <p class="flag-help">180°로 올리기 · 올린 뒤 1초 후 0°로 복귀</p>
+      </article>
+      <article class="servo" data-servo="2">
+        <div class="servo-heading"><span>03</span><h2>상하</h2><small>D11</small></div>
+        <output>90°</output>
+        <input type="range" min="0" max="180" step="0.1" value="90" aria-label="상하 각도">
+        <div class="number-row"><button class="step" data-step="-0.1" aria-label="0.1도 줄이기">−</button><input class="angle" type="number" min="0" max="180" step="0.1" value="90" inputmode="decimal"><button class="step" data-step="0.1" aria-label="0.1도 늘리기">+</button></div>
+        <div class="coarse-row" role="group" aria-label="1도 단위 조절">
+          <button class="step coarse-step" type="button" data-step="-1" aria-label="1도 줄이기">−1°</button>
+          <button class="step coarse-step" type="button" data-step="1" aria-label="1도 늘리기">+1°</button>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p id="message" role="status">추적을 바로 시작하거나 원하는 각도를 적용하세요.</p>
+      <div class="actions">
+        <button id="center" class="secondary">모두 90°</button>
+        <button id="apply" class="primary">각도 적용</button>
+      </div>
+    </footer>
+        </div>
+        <div class="vision-results">
+          <div id="tracking-indicator" class="tracking-indicator">대기</div>
+          <p id="tracking-status" role="status" aria-live="polite">4회 추적 → 최소 오차 위치 복귀 → 마지막 추적 박스로 학습 모델 거리 추정 → 최종 좌우·상하 보정 후 종료</p>
+          <p id="camera-state" class="camera-state">1920 × 1080 · PNG</p>
+          <dl class="timings live-readouts">
+            <div><dt>검출 수</dt><dd id="detection-count">-</dd></div>
+            <div><dt>표적 / 신뢰도</dt><dd id="confidence">-</dd></div>
+            <div><dt>표적 중심</dt><dd id="target-center">-</dd></div>
+            <div><dt title="원본 사진 기준의 가로 × 세로">박스 크기 (가로 × 세로)</dt><dd id="target-box-size">-</dd></div>
+            <div><dt>거리 추정 박스</dt><dd id="distance-progress">추적 박스 대기</dd></div>
+            <div><dt>거리 계산에 사용한 박스</dt><dd id="distance-box-size">-</dd></div>
+            <div><dt>추정 거리</dt><dd id="estimated-distance">-</dd></div>
+            <div><dt>추가 보정 (좌우 / 상하)</dt><dd id="distance-offset">-</dd></div>
+            <div><dt>최종 서보 보정</dt><dd id="final-offset-status">대기</dd></div>
+            <div><dt>사진의 중심 오차</dt><dd id="center-error">-</dd></div>
+            <div><dt>최소 오차 좌우 / 상하</dt><dd id="best-servo-angles">-</dd></div>
+            <div><dt>최소 오차 각도 복귀</dt><dd id="return-check">대기</dd></div>
+            <div><dt>현재 좌우 / 상하</dt><dd id="servo-angles">-</dd></div>
+            <div><dt>이동 횟수</dt><dd id="move-count">0</dd></div>
+            <div><dt>이동 후 예상 중심</dt><dd id="predicted-center">-</dd></div>
+            <div><dt>전송 · 추론</dt><dd id="live-inference-time">-</dd></div>
+          </dl>
+          <details id="snapshot-results"><summary>한 장 촬영 결과</summary>
+          <p id="vision-status" role="status">대기</p>
+          <dl class="timings">
+            <div><dt>촬영</dt><dd id="capture-time">-</dd></div>
+            <div><dt>추론</dt><dd id="inference-time">-</dd></div>
+            <div><dt>전체</dt><dd id="total-time">-</dd></div>
+          </dl>
+          <div class="detections-scroll">
+            <table id="detections" hidden>
+              <thead><tr><th>표적</th><th>신뢰도</th><th>중심 X</th><th>중심 Y</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          </details>
+          <p id="calibration-status" class="calibration-state">사진에서 측정한 픽셀·각도 보정 사용</p>
+          <p class="aim-help">파란색(ally)을 4회 촬영·보정하고 가장 가까웠던 각도로 한 번 복귀합니다. 추가 촬영 없이 이번 추적에서 마지막으로 검출된 박스 크기를 학습 모델에 입력해 1.50~2.00m 범위의 거리와 상하 보정량을 예측합니다. 좌우 보정 −2° 적용 후 1초 기다리고 상하 +8~+13°를 적용한 뒤 종료합니다. 깃발은 단독 버튼으로 실행합니다. 박스 크기나 비율이 측정 범위를 벗어나면 최종 보정을 진행하지 않습니다. 반전 체크는 수동 키보드 조작에만 적용됩니다.</p>
+          <div class="aim-actions">
+            <button id="aim" class="primary" disabled>전체 자동 실행</button>
+            <button id="aim-stop" class="secondary" disabled>중지</button>
+          </div>
+          <p id="aim-status" role="status" aria-live="polite">대기 중</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <script src="/app.js?v=final-offset6"></script>
+  <script src="/tracker.js?v=learned-distance8"></script>
+</body>
+</html>

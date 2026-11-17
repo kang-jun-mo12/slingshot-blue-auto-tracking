@@ -1,0 +1,502 @@
+[
+  {
+    "record": {
+      "sample_id": "20261012-150342-87586872:10",
+      "group_id": "20261012-150342-87586872",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 47.26,
+      "height_px": 73.44,
+      "distance_m": 1.7165,
+      "raw_pitch_offset_deg": 11.3,
+      "calibration_version": 4,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-150342-87586872/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.7166798404548087,
+      "raw_pitch_offset_deg": 11.307411356482257,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.3,
+      "distance_model_std_m": 0.0033656653089923034,
+      "pitch_conditional_model_std_deg": 0.033193045095330956,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-151253-a4c91006:10",
+      "group_id": "20261012-151253-a4c91006",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 45.87,
+      "height_px": 73.69,
+      "distance_m": 1.7347,
+      "raw_pitch_offset_deg": 11.7,
+      "calibration_version": 5,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-151253-a4c91006/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.7346415663325305,
+      "raw_pitch_offset_deg": 11.6817808163391,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.7,
+      "distance_model_std_m": 0.001377409062582,
+      "pitch_conditional_model_std_deg": 0.021383798944234034,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-151420-b3975592:10",
+      "group_id": "20261012-151420-b3975592",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 44.11,
+      "height_px": 69.88,
+      "distance_m": 1.8168,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 5,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-151420-b3975592/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8167026059705578,
+      "raw_pitch_offset_deg": 11.999871668168117,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0007487642994436083,
+      "pitch_conditional_model_std_deg": 0.017209063873881277,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-152159-1d149c82:10",
+      "group_id": "20261012-152159-1d149c82",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 46.99,
+      "height_px": 73.05,
+      "distance_m": 1.7242,
+      "raw_pitch_offset_deg": 11.5,
+      "calibration_version": 6,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-152159-1d149c82/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.7242373004224676,
+      "raw_pitch_offset_deg": 11.462414938765097,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.5,
+      "distance_model_std_m": 0.0005794201011819954,
+      "pitch_conditional_model_std_deg": 0.020190693418648285,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-152408-d9bee247:10",
+      "group_id": "20261012-152408-d9bee247",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 45.52,
+      "height_px": 69.67,
+      "distance_m": 1.8078,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 7,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-152408-d9bee247/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.815421855445422,
+      "raw_pitch_offset_deg": 11.999667242008284,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0037925815718893407,
+      "pitch_conditional_model_std_deg": 0.017211262974949522,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-152546-07138fc4:10",
+      "group_id": "20261012-152546-07138fc4",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 44.56,
+      "height_px": 70.19,
+      "distance_m": 1.8123,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-152546-07138fc4/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8116795541168287,
+      "raw_pitch_offset_deg": 11.99860101847653,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0007384074699024503,
+      "pitch_conditional_model_std_deg": 0.018336640819421178,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-153235-73c65d2d:11",
+      "group_id": "20261012-153235-73c65d2d",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 43.27,
+      "height_px": 70.96,
+      "distance_m": 1.818,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-153235-73c65d2d/events.jsonl",
+      "source_line": 11
+    },
+    "prediction": {
+      "distance_m": 1.8179248996634014,
+      "raw_pitch_offset_deg": 11.999996525709212,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.001081420188418948,
+      "pitch_conditional_model_std_deg": 0.017236321509407286,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-153508-c25526dc:11",
+      "group_id": "20261012-153508-c25526dc",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 46.29,
+      "height_px": 75.37,
+      "distance_m": 1.7129,
+      "raw_pitch_offset_deg": 11.3,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-153508-c25526dc/events.jsonl",
+      "source_line": 11
+    },
+    "prediction": {
+      "distance_m": 1.7130104066069667,
+      "raw_pitch_offset_deg": 11.23544862942626,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.2,
+      "distance_model_std_m": 0.003651852368338855,
+      "pitch_conditional_model_std_deg": 0.03524575243219365,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-153642-862b4fe2:10",
+      "group_id": "20261012-153642-862b4fe2",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 54.34,
+      "height_px": 80.33,
+      "distance_m": 1.5562,
+      "raw_pitch_offset_deg": 10.0,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-153642-862b4fe2/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.5550619914821242,
+      "raw_pitch_offset_deg": 10.008942113973339,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 9.0,
+      "distance_model_std_m": 0.002247094351034439,
+      "pitch_conditional_model_std_deg": 0.021280626241647536,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-154122-1123e74f:11",
+      "group_id": "20261012-154122-1123e74f",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 46.22,
+      "height_px": 73.79,
+      "distance_m": 1.7284,
+      "raw_pitch_offset_deg": 11.6,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-154122-1123e74f/events.jsonl",
+      "source_line": 11
+    },
+    "prediction": {
+      "distance_m": 1.7285607538476477,
+      "raw_pitch_offset_deg": 11.556162973353205,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.6,
+      "distance_model_std_m": 0.00022822277997081535,
+      "pitch_conditional_model_std_deg": 0.017783092354403323,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-154230-b6e7b2a9:10",
+      "group_id": "20261012-154230-b6e7b2a9",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 44.0,
+      "height_px": 69.87,
+      "distance_m": 1.8177,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 8,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-154230-b6e7b2a9/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8175258108283545,
+      "raw_pitch_offset_deg": 11.999962352482994,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0010627373154229844,
+      "pitch_conditional_model_std_deg": 0.017232459787550513,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-155641-1011ac35:10",
+      "group_id": "20261012-155641-1011ac35",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 43.21,
+      "height_px": 66.61,
+      "distance_m": 1.8379,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 9,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-155641-1011ac35/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8379075086404886,
+      "raw_pitch_offset_deg": 12.000038601186242,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.00018528589164174805,
+      "pitch_conditional_model_std_deg": 0.016014888874464096,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-155800-df372962:10",
+      "group_id": "20261012-155800-df372962",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 45.04,
+      "height_px": 68.62,
+      "distance_m": 1.816,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 9,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-155800-df372962/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8159048668124687,
+      "raw_pitch_offset_deg": 11.999754242809223,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.00018400098528416968,
+      "pitch_conditional_model_std_deg": 0.017194903211665728,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-155948-52e0566a:10",
+      "group_id": "20261012-155948-52e0566a",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 44.64,
+      "height_px": 68.58,
+      "distance_m": 1.8189,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 10,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-155948-52e0566a/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8188816798762026,
+      "raw_pitch_offset_deg": 12.000056304397697,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0007891969230266759,
+      "pitch_conditional_model_std_deg": 0.017216921387893734,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160235-9fed33b7:10",
+      "group_id": "20261012-160235-9fed33b7",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 40.92,
+      "height_px": 65.73,
+      "distance_m": 1.8758,
+      "raw_pitch_offset_deg": 12.3,
+      "calibration_version": 11,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160235-9fed33b7/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.875863921483911,
+      "raw_pitch_offset_deg": 12.226543664428164,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.2,
+      "distance_model_std_m": 0.0008211684764022709,
+      "pitch_conditional_model_std_deg": 0.021637190785765238,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160354-1732e729:10",
+      "group_id": "20261012-160354-1732e729",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 40.14,
+      "height_px": 65.51,
+      "distance_m": 1.8969,
+      "raw_pitch_offset_deg": 12.5,
+      "calibration_version": 11,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160354-1732e729/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8963390081356308,
+      "raw_pitch_offset_deg": 12.461898715933994,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.5,
+      "distance_model_std_m": 0.0007408454213157446,
+      "pitch_conditional_model_std_deg": 0.019826322583301456,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160511-1b71af36:10",
+      "group_id": "20261012-160511-1b71af36",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 46.1,
+      "height_px": 72.67,
+      "distance_m": 1.7407,
+      "raw_pitch_offset_deg": 11.8,
+      "calibration_version": 11,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160511-1b71af36/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.7406053227749425,
+      "raw_pitch_offset_deg": 11.799818499144044,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 10.8,
+      "distance_model_std_m": 0.00024009771847821907,
+      "pitch_conditional_model_std_deg": 0.01941379071120303,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160628-137c3fd2:10",
+      "group_id": "20261012-160628-137c3fd2",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 42.84,
+      "height_px": 66.59,
+      "distance_m": 1.8406,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 11,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160628-137c3fd2/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.840575759793705,
+      "raw_pitch_offset_deg": 11.99950049460643,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 8.913871454340571e-05,
+      "pitch_conditional_model_std_deg": 0.01576784048104766,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160809-43009ed9:10",
+      "group_id": "20261012-160809-43009ed9",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 44.11,
+      "height_px": 69.67,
+      "distance_m": 1.8178,
+      "raw_pitch_offset_deg": 12.0,
+      "calibration_version": 11,
+      "range_clamped": false,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160809-43009ed9/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.8176432874320345,
+      "raw_pitch_offset_deg": 11.99997303296359,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 11.0,
+      "distance_model_std_m": 0.0010774697004186232,
+      "pitch_conditional_model_std_deg": 0.01723430386997842,
+      "within_training_box_scale": true
+    }
+  },
+  {
+    "record": {
+      "sample_id": "20261012-160931-a21861d8:10",
+      "group_id": "20261012-160931-a21861d8",
+      "source": "teacher_output_user_confirmed",
+      "width_px": 56.41,
+      "height_px": 81.8,
+      "distance_m": 1.5,
+      "raw_pitch_offset_deg": 9.0,
+      "calibration_version": 11,
+      "range_clamped": true,
+      "box_source": "last_tracking_box",
+      "source_path": "tracking_sessions/20261012-160931-a21861d8/events.jsonl",
+      "source_line": 10
+    },
+    "prediction": {
+      "distance_m": 1.5037668514766804,
+      "raw_pitch_offset_deg": 9.089734513941295,
+      "yaw_offset_deg": -2.0,
+      "pitch_offset_deg": 8.1,
+      "distance_model_std_m": 0.004175939963379161,
+      "pitch_conditional_model_std_deg": 0.03274387226005103,
+      "within_training_box_scale": false
+    }
+  }
+]

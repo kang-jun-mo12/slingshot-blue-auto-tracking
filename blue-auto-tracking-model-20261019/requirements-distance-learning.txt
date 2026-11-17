@@ -1,0 +1,4 @@
+# Separate offline training environment; the servo server does not import these.
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0

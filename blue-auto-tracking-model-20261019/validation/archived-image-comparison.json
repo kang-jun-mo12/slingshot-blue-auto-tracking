@@ -1,0 +1,101 @@
+{
+  "method": "offline_same_saved_yolo_box_for_both_estimators",
+  "images_reinferred_with_yolo": false,
+  "motors_moved": false,
+  "current_calibration_version": 11,
+  "current_trims": {
+    "yaw_offset_deg": -2.0,
+    "pitch_trim_deg": -1.0,
+    "pitch_direction": 1
+  },
+  "unique_linked_images": 1224,
+  "archive_audit": {
+    "image_observation_records": 1298,
+    "no_selected_target": 15,
+    "reused_image_records": 59,
+    "invalid_json_lines": 2,
+    "excluded_unique_images": 77
+  },
+  "excluded_reasons": {
+    "박스 크기가 측정표의 1.50~2.00m 범위를 벗어났습니다.": 65,
+    "박스의 가로·세로 비율이 측정표와 다릅니다. 같은 표적과 자세인지 확인하세요.": 6,
+    "target_class_or_confidence": 2,
+    "cannot identify image file 'tracking_sessions/20261009-231805-cdf30f8f/distance-02.png'": 1,
+    "cannot identify image file 'tracking_sessions/20261010-232322-216e61d7/03.png'": 1,
+    "cannot identify image file 'tracking_sessions/20261010-232322-216e61d7/04.png'": 1,
+    "cannot identify image file 'tracking_sessions/20261012-152717-2f8f30b8/03.png'": 1
+  },
+  "final_model_all_eligible_photos": {
+    "images": 1147,
+    "sessions": 218,
+    "distance_mean_difference_cm": 0.05523592888705813,
+    "distance_p95_difference_cm": 0.30651568530746914,
+    "distance_max_difference_cm": 0.8705320544138972,
+    "pitch_command_mean_difference_deg": 0.00784655623365301,
+    "pitch_command_max_difference_deg": 0.20000000000000107,
+    "pitch_raw_mean_difference_deg": 0.01477268219735307,
+    "identical_pitch_commands": 1061,
+    "different_pitch_commands": 86,
+    "within_0_1_deg": 1143,
+    "identical_yaw_commands": true
+  },
+  "evaluation_model_held_out_session_photos": {
+    "images": 80,
+    "sessions": 20,
+    "distance_mean_difference_cm": 0.11164885523382878,
+    "distance_p95_difference_cm": 1.0716638947628754,
+    "distance_max_difference_cm": 1.37014073184607,
+    "pitch_command_mean_difference_deg": 0.00750000000000004,
+    "pitch_command_max_difference_deg": 0.10000000000000142,
+    "pitch_raw_mean_difference_deg": 0.01380128119113606,
+    "identical_pitch_commands": 74,
+    "different_pitch_commands": 6,
+    "within_0_1_deg": 80,
+    "identical_yaw_commands": true
+  },
+  "final_model_photos_from_other_unseen_sessions": {
+    "images": 562,
+    "sessions": 118,
+    "distance_mean_difference_cm": 0.07406466225073738,
+    "distance_p95_difference_cm": 0.3222837275366973,
+    "distance_max_difference_cm": 0.8705320544138972,
+    "pitch_command_mean_difference_deg": 0.010854092526690388,
+    "pitch_command_max_difference_deg": 0.20000000000000107,
+    "pitch_raw_mean_difference_deg": 0.017429984587685035,
+    "identical_pitch_commands": 505,
+    "different_pitch_commands": 57,
+    "within_0_1_deg": 558,
+    "identical_yaw_commands": true
+  },
+  "held_out_session_ids": [
+    "20261012-150342-87586872",
+    "20261012-151253-a4c91006",
+    "20261012-151420-b3975592",
+    "20261012-152159-1d149c82",
+    "20261012-152408-d9bee247",
+    "20261012-152546-07138fc4",
+    "20261012-153235-73c65d2d",
+    "20261012-153508-c25526dc",
+    "20261012-153642-862b4fe2",
+    "20261012-154122-1123e74f",
+    "20261012-154230-b6e7b2a9",
+    "20261012-155641-1011ac35",
+    "20261012-155800-df372962",
+    "20261012-155948-52e0566a",
+    "20261012-160235-9fed33b7",
+    "20261012-160354-1732e729",
+    "20261012-160511-1b71af36",
+    "20261012-160628-137c3fd2",
+    "20261012-160809-43009ed9",
+    "20261012-160931-a21861d8"
+  ],
+  "evaluation_training_rows": 91,
+  "caveats": [
+    "All eligible photos are a mixture of training-session and other archived inputs.",
+    "The held-out session result uses a separately fitted model that never saw those sessions.",
+    "A photo may have multiple saved observations; each physical image file is counted once.",
+    "Images are verified and the saved selected YOLO box is replayed; YOLO is not rerun.",
+    "Differences compare estimators, not independent distance ground truth or physical servo behavior.",
+    "Angles from an image pose are hypothetical comparisons, not recorded post-return physical angles."
+  ]
+}

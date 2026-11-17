@@ -1,0 +1,18 @@
+# 문서 생성용 로컬 파이썬 가상환경
+.document-tools/
+.venv/
+venv/
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# architecture_images 폴더와 내용이 같은 압축본
+파랑_자동추적_아키텍처_그림.zip
+
+# OS/편집기 파일
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*

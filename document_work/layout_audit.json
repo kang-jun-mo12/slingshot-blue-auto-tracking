@@ -1,0 +1,13 @@
+{
+  "source": "파랑_자동추적_개발과정_및_최종모델_v2.md",
+  "output": "파랑_자동추적_개발보고서.hwpx",
+  "paper": "A4",
+  "body_font": "바탕",
+  "body_size_pt": 11,
+  "body_line_spacing_percent": 160,
+  "table_size_pt": 10,
+  "tables": 3,
+  "images": 1,
+  "main_headings": 5,
+  "package_integrity": true
+}
